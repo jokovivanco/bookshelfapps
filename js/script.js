@@ -109,7 +109,7 @@ const renderData = (searchMode = false) => {
     title.textContent = filteredBooks[i].title;
 
     const author = document.createElement("p");
-    author.textContent = filteredBooks[i].author;
+    author.textContent = "By " + filteredBooks[i].author;
 
     const mainButton = document.createElement("button");
     mainButton.classList.add("card-button", filteredBooks[i].isCompleted ? "card-button-unread" : "card-button-read");
